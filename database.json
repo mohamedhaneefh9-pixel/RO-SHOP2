@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "passwordHash": "$2b$10$nXaO20iY0dJVcwgKyrsD2.SMPtMbUbx1VqSY5nuZnkqjH9qtqQ/1O"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Raja Aqua Premium Alkaline RO",
+      "price": 8499,
+      "capacity": "12L",
+      "tech": "RO + UV + UF + TDS Controller + Alkaline",
+      "image": "WhatsApp Image 2026-06-07 at 13.16.41.jpeg",
+      "features": [
+        "Alkaline pH Booster",
+        "Active Copper Technology",
+        "Multi-stage purification",
+        "12L Storage Capacity"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Raja Aqua Copper+ Zinc RO",
+      "price": 9999,
+      "capacity": "10L",
+      "tech": "RO + UV + Active Copper + Zinc Booster",
+      "image": "WhatsApp Image 2026-06-07 at 13.16.44.jpeg",
+      "features": [
+        "Copper & Zinc Infusion",
+        "Mineral Retention System",
+        "Detachable Water Tank",
+        "Auto Shut-off Indicator"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Raja Aqua Eco-Smart RO",
+      "price": 7499,
+      "capacity": "8L",
+      "tech": "RO + UV + Eco-Water Saving Tech",
+      "image": "WhatsApp Image 2026-06-07 at 13.16.45.jpeg",
+      "features": [
+        "50% Water Recovery Tech",
+        "Compact Wall-Mount Design",
+        "Smart LED Alert Panel",
+        "Food Grade ABS Casing"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Raja Aqua Commercial RO 50 LPH",
+      "price": 18999,
+      "capacity": "50 LPH",
+      "tech": "High-Flow Double Membrane RO System",
+      "image": "WhatsApp Image 2026-06-07 at 13.16.32.jpeg",
+      "features": [
+        "Double RO Membranes",
+        "Purifies 50 Liters/Hour",
+        "Stainless Steel Skid Frame",
+        "Suitable for Offices & Cafes"
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "RO-DDG-525770",
+      "customerName": "Test Customer COD",
+      "phone": "9988776655",
+      "address": "123 Test Street, Dindigul",
+      "productId": 1,
+      "productName": "Raja Aqua Premium Alkaline RO",
+      "price": 8499,
+      "paymentMethod": "COD",
+      "orderDate": "2026-06-11T05:26:21.657Z",
+      "status": "Pending"
+    },
+    {
+      "orderId": "RO-DDG-658114",
+      "customerName": "Test Customer UPI",
+      "phone": "8877665544",
+      "address": "456 Test Road, Dindigul",
+      "productId": 2,
+      "productName": "Raja Aqua Copper+ Zinc RO",
+      "price": 9999,
+      "paymentMethod": "UPI",
+      "orderDate": "2026-06-11T05:26:21.674Z",
+      "status": "Pending"
+    },
+    {
+      "orderId": "RO-DDG-904721",
+      "customerName": "Test Customer COD",
+      "phone": "9988776655",
+      "address": "123 Test Street, Dindigul",
+      "productId": 1,
+      "productName": "Raja Aqua Premium Alkaline RO",
+      "price": 8499,
+      "paymentMethod": "COD",
+      "orderDate": "2026-06-11T10:44:23.837Z",
+      "status": "Pending"
+    },
+    {
+      "orderId": "RO-DDG-831239",
+      "customerName": "Test Customer UPI",
+      "phone": "8877665544",
+      "address": "456 Test Road, Dindigul",
+      "productId": 2,
+      "productName": "Raja Aqua Copper+ Zinc RO",
+      "price": 9999,
+      "paymentMethod": "UPI",
+      "orderDate": "2026-06-11T10:44:23.896Z",
+      "status": "Pending"
+    }
+  ]
+}

@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raja Aqua - Advanced RO Water Purifier Solutions Dindigul</title>
+  <meta name="description" content="Raja Aqua offers advanced RO, UV, and Alkaline water purification systems for homes & businesses in Dindigul. 10+ years of trusted service, sales, and fast installation.">
+  <meta name="keywords" content="RO purifier Dindigul, water purifier installation, Raja Aqua, RO service Dindigul, alkaline water filter, commercial RO system">
+  <meta name="author" content="Raja Aqua">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#03045e',
+              blue: '#0077b6',
+              sky: '#00b4d8',
+              light: '#90e0ef',
+              ice: '#caf0f8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-200 transition-colors duration-300">
+
+  <!-- Water Fill Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="water-droplet-loader">
+      <div class="water-fill">
+        <div class="water-wave-anim"></div>
+      </div>
+    </div>
+    <h1 class="text-white font-extrabold text-2xl tracking-wider font-heading mb-2">Raja Aqua</h1>
+    <p class="text-sky-300/80 text-xs font-semibold uppercase tracking-widest animate-pulse">Pure Water, Healthy Life</p>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 py-5 transition-all duration-300 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#home" class="flex items-center space-x-2.5 group">
+        <div class="w-10 h-10 bg-gradient-to-tr from-brand-blue to-brand-sky rounded-xl flex items-center justify-center text-white shadow-md shadow-brand-blue/20 group-hover:rotate-12 transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="text-white float-droplet" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+          </svg>
+        </div>
+        <div>
+          <span class="text-xl font-black text-brand-navy dark:text-brand-ice tracking-tight block leading-none">Raja Aqua</span>
+          <span class="text-[9px] uppercase font-bold tracking-widest text-brand-sky mt-0.5 block">RO Systems</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden lg:flex items-center space-x-6">
+        <a href="#home" class="nav-link text-xs font-bold uppercase tracking-wider pb-1 border-b-2 border-transparent hover:text-brand-sky hover:border-brand-sky transition-all duration-200">Home</a>
+        <a href="#services" class="nav-link text-xs font-bold uppercase tracking-wider pb-1 border-b-2 border-transparent hover:text-brand-sky hover:border-brand-sky transition-all duration-200">Services</a>
+        <a href="#products" class="nav-link text-xs font-bold uppercase tracking-wider pb-1 border-b-2 border-transparent hover:text-brand-sky hover:border-brand-sky transition-all duration-200">Products</a>
+        <a href="#about" class="nav-link text-xs font-bold uppercase tracking-wider pb-1 border-b-2 border-transparent hover:text-brand-sky hover:border-brand-sky transition-all duration-200">About</a>
+        <a href="#testimonials" class="nav-link text-xs font-bold uppercase tracking-wider pb-1 border-b-2 border-transparent hover:text-brand-sky hover:border-brand-sky transition-all duration-200">Reviews</a>
+        <a href="#faq" class="nav-link text-xs font-bold uppercase tracking-wider pb-1 border-b-2 border-transparent hover:text-brand-sky hover:border-brand-sky transition-all duration-200">FAQ</a>
+        <a href="#contact" class="nav-link text-xs font-bold uppercase tracking-wider pb-1 border-b-2 border-transparent hover:text-brand-sky hover:border-brand-sky transition-all duration-200">Contact</a>
+      </div>
+
+      <!-- Action Elements (Cart, Theme, Mobile menu) -->
+      <div class="flex items-center space-x-3">
+        
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" onclick="toggleTheme()" class="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle Theme">
+          <svg width="20" height="20" class="text-slate-700 dark:text-slate-300" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+          </svg>
+        </button>
+
+        <!-- Cart Button -->
+        <button id="cart-toggle-btn" onclick="showCartDrawer()" class="relative p-2.5 rounded-xl bg-gradient-to-tr from-brand-blue to-brand-sky text-white shadow-md shadow-brand-blue/20 hover:scale-105 transition-all duration-300 animate-none" aria-label="Open Cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <span class="cart-count absolute -top-1.5 -right-1.5 bg-red-500 text-white text-[9px] font-black w-5 h-5 rounded-full flex items-center justify-center border-2 border-white dark:border-slate-900 hidden">0</span>
+        </button>
+
+        <!-- Quick Call Header CTA -->
+        <a href="tel:9791454214" class="hidden sm:flex items-center space-x-1.5 px-3 py-2 bg-emerald-50 dark:bg-emerald-950/20 text-emerald-600 dark:text-emerald-400 font-extrabold text-[11px] rounded-xl border border-emerald-100 dark:border-emerald-900/30">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>9791454214</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="lg:hidden p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" aria-label="Toggle Mobile Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden px-4 pt-3 pb-4 space-y-1 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-100 dark:border-slate-800">
+      <a href="#home" class="mobile-nav-link block py-2 px-3 text-xs font-bold uppercase rounded-lg hover:bg-slate-100 dark:hover:bg-slate-850" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+      <a href="#services" class="mobile-nav-link block py-2 px-3 text-xs font-bold uppercase rounded-lg hover:bg-slate-100 dark:hover:bg-slate-850" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
+      <a href="#products" class="mobile-nav-link block py-2 px-3 text-xs font-bold uppercase rounded-lg hover:bg-slate-100 dark:hover:bg-slate-850" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Products</a>
+      <a href="#about" class="mobile-nav-link block py-2 px-3 text-xs font-bold uppercase rounded-lg hover:bg-slate-100 dark:hover:bg-slate-850" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+      <a href="#testimonials" class="mobile-nav-link block py-2 px-3 text-xs font-bold uppercase rounded-lg hover:bg-slate-100 dark:hover:bg-slate-850" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Reviews</a>
+      <a href="#faq" class="mobile-nav-link block py-2 px-3 text-xs font-bold uppercase rounded-lg hover:bg-slate-100 dark:hover:bg-slate-850" onclick="document.getElementById('mobile-menu').classList.add('hidden')">FAQ</a>
+      <a href="#contact" class="mobile-nav-link block py-2 px-3 text-xs font-bold uppercase rounded-lg hover:bg-slate-100 dark:hover:bg-slate-850" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+    
+    <!-- Three.js Water Wave Canvas Background -->
+    <div id="water-bg" class="water-bg-container">
+      <canvas id="water-canvas"></canvas>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative py-12">
+      
+      <!-- Text Content (Hero Left) -->
+      <div class="lg:col-span-7 text-left space-y-6">
+        <div class="hero-animate-title inline-flex items-center space-x-2 px-3.5 py-1.5 bg-sky-500/10 text-sky-600 dark:text-sky-300 font-bold text-xs rounded-full border border-sky-400/20">
+          <span>⭐ 10+ Years Trusted Brand in Dindigul</span>
+        </div>
+        <h1 class="hero-animate-title text-4xl sm:text-5xl lg:text-6xl font-black text-brand-navy dark:text-white leading-[1.15] tracking-tight">
+          Pure Water,<br>
+          <span class="text-water-gradient">Healthy Life</span>
+        </h1>
+        <p class="hero-animate-sub text-sm sm:text-base text-slate-600 dark:text-slate-350 max-w-xl font-medium leading-relaxed">
+          Experience premium water purification with Raja Aqua. Our advanced Multi-Stage RO + UV + UF systems remove 99.9% of impurities, ensuring sweet, pure, and mineral-rich drinking water for your home and business.
+        </p>
+        <div class="hero-animate-btns flex flex-wrap items-center gap-4 pt-2">
+          <a href="#products" class="btn-ripple btn-primary px-7 py-3.5 rounded-2xl text-xs font-bold flex items-center">
+            <span>View Products</span>
+            <svg width="16" height="16" class="ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+          <a href="#direct-order" class="btn-ripple btn-secondary px-7 py-3.5 rounded-2xl text-xs font-bold dark:text-brand-ice dark:border-brand-sky">
+            Order Now
+          </a>
+        </div>
+      </div>
+
+      <!-- 3D Purifier Canvas (Hero Right) -->
+      <div class="lg:col-span-5 flex justify-center items-center w-full hero-animate-canvas">
+        <div class="w-full max-w-[420px] relative">
+          <!-- Glossy floating backdrop -->
+          <div class="absolute inset-0 bg-gradient-to-tr from-brand-sky/20 to-brand-blue/20 blur-3xl -z-10 rounded-full scale-90"></div>
+          
+          <div id="purifier-3d" class="purifier-3d-container">
+            <canvas id="purifier-canvas"></canvas>
+          </div>
+          
+          <!-- Instructions overlay -->
+          <div class="text-center -mt-2 text-xs font-semibold text-slate-400 dark:text-slate-500 animate-pulse tracking-wide select-none">
+            🖱️ Drag to rotate 3D Purifier
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Section Wave Divider -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[60px] fill-slate-100 dark:fill-slate-900/40">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V30.28C1126.73,56.77,1058.4,112,985.66,92.83Z"></path>
+      </svg>
+    </div>
+  </header>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-choose-us" class="py-20 bg-slate-100 dark:bg-slate-900/30 relative features-trigger">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+      
+      <div class="max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-3xl font-extrabold text-brand-navy dark:text-white ripple-header">Why Choose Raja Aqua?</h2>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">We deliver state-of-the-art purification technology paired with unmatched customer service.</p>
+      </div>
+
+      <!-- Feature Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Card 1: Clean Water Guarantee -->
+        <div class="reveal-on-scroll glass-panel p-6 text-left hover-grow transition-all duration-300" style="transition-delay: 0ms;">
+          <div class="h-36 w-full rounded-xl overflow-hidden mb-5 bg-slate-150 relative shadow-sm border border-slate-200/40 dark:border-slate-800/40">
+            <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&auto=format&fit=crop&q=80" alt="Clean Water Guarantee" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3 w-8 h-8 bg-white/90 dark:bg-slate-900/90 rounded-lg flex items-center justify-center text-sky-500 shadow-sm backdrop-blur-md">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white mb-2">Clean Water Guarantee</h3>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed font-medium">99.9% TDS reduction. Our multi-stage membrane filtration leaves water sweet, active, and pure.</p>
+        </div>
+
+        <!-- Card 2: Affordable Pricing -->
+        <div class="reveal-on-scroll glass-panel p-6 text-left hover-grow transition-all duration-300" style="transition-delay: 100ms;">
+          <div class="h-36 w-full rounded-xl overflow-hidden mb-5 bg-slate-150 relative shadow-sm border border-slate-200/40 dark:border-slate-800/40">
+            <img src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=400&auto=format&fit=crop&q=80" alt="Affordable Pricing" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3 w-8 h-8 bg-white/90 dark:bg-slate-900/90 rounded-lg flex items-center justify-center text-emerald-500 shadow-sm backdrop-blur-md">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white mb-2">Affordable Pricing</h3>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed font-medium">Best wholesale rates in Dindigul. High-quality products and genuine parts at prices you'll love.</p>
+        </div>
+
+        <!-- Card 3: Same-Day Delivery -->
+        <div class="reveal-on-scroll glass-panel p-6 text-left hover-grow transition-all duration-300" style="transition-delay: 200ms;">
+          <div class="h-36 w-full rounded-xl overflow-hidden mb-5 bg-slate-150 relative shadow-sm border border-slate-200/40 dark:border-slate-800/40">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&auto=format&fit=crop&q=80" alt="Same-Day Delivery" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3 w-8 h-8 bg-white/90 dark:bg-slate-900/90 rounded-lg flex items-center justify-center text-blue-500 shadow-sm backdrop-blur-md">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white mb-2">Same-Day Delivery</h3>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed font-medium">Fast installation. Order a system and get it delivered and installed within 24 hours.</p>
+        </div>
+
+        <!-- Card 4: 24/7 Support -->
+        <div class="reveal-on-scroll glass-panel p-6 text-left hover-grow transition-all duration-300" style="transition-delay: 300ms;">
+          <div class="h-36 w-full rounded-xl overflow-hidden mb-5 bg-slate-150 relative shadow-sm border border-slate-200/40 dark:border-slate-800/40">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&auto=format&fit=crop&q=80" alt="24/7 Support" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+            <div class="absolute top-3 left-3 w-8 h-8 bg-white/90 dark:bg-slate-900/90 rounded-lg flex items-center justify-center text-indigo-500 shadow-sm backdrop-blur-md">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white mb-2">24/7 Support</h3>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed font-medium">Prompt, certified service. Our maintenance team is available around the clock to assist you.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services Section (NEW) -->
+  <section id="services" class="py-20 bg-white dark:bg-slate-950 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      
+      <div class="max-w-3xl mx-auto mb-16 text-center space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-sky">Service Solutions</span>
+        <h2 class="text-3xl font-extrabold text-brand-navy dark:text-white ripple-header">Our Specialized Services</h2>
+        <p class="text-xs sm:text-sm text-slate-550 dark:text-slate-400 font-medium">From custom setups to periodic cartridge servicing, we cover all your clean water requirements.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Installation Service -->
+        <div class="service-card p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-10 h-10 bg-sky-500/10 text-sky-500 rounded-xl flex items-center justify-center">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3 class="text-sm font-bold text-slate-900 dark:text-white">Professional Installation</h3>
+            <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed font-medium">Free mounting, water inlet connections, and TDS calibration for newly purchased systems.</p>
+          </div>
+          <a href="#contact" class="text-xs font-bold text-sky-600 dark:text-sky-400 mt-4 block hover:underline">Book Installation →</a>
+        </div>
+
+        <!-- Servicing & Repairs -->
+        <div class="service-card p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-10 h-10 bg-indigo-500/10 text-indigo-500 rounded-xl flex items-center justify-center">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+            </div>
+            <h3 class="text-sm font-bold text-slate-900 dark:text-white">Repair & Maintenance</h3>
+            <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed font-medium">Tackling leaks, pump vibration, filter choking, electrical faults, and auto-shutoff errors.</p>
+          </div>
+          <a href="#contact" class="text-xs font-bold text-sky-600 dark:text-sky-400 mt-4 block hover:underline">Request Repair →</a>
+        </div>
+
+        <!-- Filter & Membrane Replacement -->
+        <div class="service-card p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-10 h-10 bg-emerald-500/10 text-emerald-500 rounded-xl flex items-center justify-center">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H12v3H8V8H4V4h4v4h8V4h4v4h1.21A10.02 10.02 0 0022 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2c2.81 0 5.356 1.157 7.21 3.02L20 6h-4v3h4.21A8.001 8.001 0 0119.938 11z"/></svg>
+            </div>
+            <h3 class="text-sm font-bold text-slate-900 dark:text-white">Filter & Membrane Replacement</h3>
+            <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed font-medium">Standard swap for Sediment filter, Pre-Activated Carbon filter, UF, and high-quality RO membranes.</p>
+          </div>
+          <a href="#contact" class="text-xs font-bold text-sky-600 dark:text-sky-400 mt-4 block hover:underline">Change Filters →</a>
+        </div>
+
+        <!-- AMC Plans -->
+        <div class="service-card p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-10 h-10 bg-rose-500/10 text-rose-500 rounded-xl flex items-center justify-center">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            </div>
+            <h3 class="text-sm font-bold text-slate-900 dark:text-white">Annual Maintenance (AMC)</h3>
+            <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed font-medium">Hassle-free coverage: 3 scheduled service visits, free spare replacement, and priority breakdown assistance.</p>
+          </div>
+          <a href="#contact" class="text-xs font-bold text-sky-600 dark:text-sky-400 mt-4 block hover:underline">View AMC Plans →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-20 bg-slate-50 dark:bg-slate-900/40 relative">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div class="space-y-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-sky">Our Catalog</span>
+          <h2 class="text-3xl font-extrabold text-brand-navy dark:text-white ripple-header">Advanced RO Purifiers</h2>
+        </div>
+        
+        <!-- Admin Panel Toggle link -->
+        <button onclick="openAdmin()" class="text-xs font-bold text-slate-400 hover:text-brand-sky flex items-center space-x-1.5 transition-colors">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          <span>Admin Product Portal</span>
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="products-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Loaded Dynamically by app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white dark:bg-slate-950 relative about-trigger">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      
+      <!-- Company Text (About Left) -->
+      <div class="lg:col-span-6 space-y-6 reveal-left">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-sky">Who We Are</span>
+        <h2 class="text-3xl font-extrabold text-brand-navy dark:text-white leading-tight">
+          Providing Clean & Healthy Drinking Water Since 2016
+        </h2>
+        <p class="text-sm text-slate-650 dark:text-slate-350 leading-relaxed font-medium">
+          Raja Aqua (RO Systems) has been Dindigul's premier destination for domestic, commercial, and industrial water purification solutions. We manufacture and supply high-quality, heavy-duty RO purifiers designed specifically to combat the hard ground-water TDS levels in and around Dindigul.
+        </p>
+        <p class="text-sm text-slate-650 dark:text-slate-350 leading-relaxed font-medium">
+          From compact under-sink models for modern apartments to high-capacity industrial plants, our commitment to purity remains absolute. Every system is build-tested and certified to guarantee your safety.
+        </p>
+
+        <!-- Stats Counter -->
+        <div class="grid grid-cols-2 gap-6 pt-4 border-t border-slate-100 dark:border-slate-800/80">
+          <div class="space-y-1">
+            <span class="text-3xl font-black text-brand-sky block">10+ Years</span>
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">Experience</span>
+          </div>
+          <div class="space-y-1">
+            <span class="text-3xl font-black text-brand-blue dark:text-brand-light block">1000+</span>
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">Happy Customers</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Founder Card (About Right) -->
+      <div class="lg:col-span-6 flex justify-center reveal-right">
+        <div class="founder-card glass-panel p-8 w-full max-w-[460px] relative border border-brand-sky/20">
+          
+          <div class="flex flex-col items-center text-center space-y-5">
+            <!-- Owner Image -->
+            <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl relative group">
+              <img src="owner.jpg" alt="S Mohammed Hanif - Founder of Raja Aqua" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            </div>
+
+            <!-- Founder text -->
+            <div class="space-y-1">
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white">S Mohammed Hanif</h3>
+              <p class="text-xs font-bold text-brand-sky uppercase tracking-wider">Founder & Managing Director</p>
+            </div>
+
+            <div class="relative px-4 py-2 bg-slate-50 dark:bg-slate-900/50 rounded-2xl italic text-xs text-slate-650 dark:text-slate-350 leading-relaxed font-medium shadow-inner">
+              <span class="absolute top-1 left-2 text-3xl text-brand-sky/20 font-serif leading-none select-none">“</span>
+              At Raja Aqua, our mission is to deliver the absolute purest water to every household and business in Dindigul. We believe that clean water is the fundamental block of a healthy life, and we are committed to providing top-quality RO systems and prompt 24/7 service you can trust.
+              <span class="absolute bottom-1 right-2 text-3xl text-brand-sky/20 font-serif leading-none select-none">”</span>
+            </div>
+            
+            <div class="flex items-center space-x-2.5 text-xs text-emerald-600 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-950/20 px-3.5 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-900/20 pulse-badge">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 block"></span>
+              <span>Personally Guaranteed Satisfaction</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials Section (NEW) -->
+  <section id="testimonials" class="py-20 bg-slate-100 dark:bg-slate-900/30 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      
+      <div class="max-w-3xl mx-auto mb-16 text-center space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-sky">Customer Feedback</span>
+        <h2 class="text-3xl font-extrabold text-brand-navy dark:text-white ripple-header">What Our Customers Say</h2>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">Read verified stories from happy homeowners and businesses across Dindigul.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="glass-panel p-8 space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-yellow-400">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-medium italic">
+              "We bought the Copper+Zinc RO system. The water taste has improved drastically, and the TDS is down from 950 to 80. Excellent service from Mohammed Hanif and his team, they finished the installation on the same afternoon."
+            </p>
+          </div>
+          <div class="flex items-center space-x-3 pt-3 border-t border-slate-100 dark:border-slate-800">
+            <div class="w-9 h-9 rounded-full bg-sky-100 dark:bg-sky-950 flex items-center justify-center font-bold text-sky-600 text-xs">RK</div>
+            <div>
+              <h4 class="text-xs font-bold text-slate-800 dark:text-white">Rajesh Kumar</h4>
+              <span class="text-[10px] text-emerald-500 font-bold block">✓ Verified Buyer, Dindigul</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="glass-panel p-8 space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-yellow-400">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-xs text-slate-650 dark:text-slate-300 leading-relaxed font-medium italic">
+              "We have had a Raja Aqua service contract (AMC) for 3 years. They are extremely professional. They come on time for filter cleaning twice a year and replace membranes without any extra charge. Highly recommended!"
+            </p>
+          </div>
+          <div class="flex items-center space-x-3 pt-3 border-t border-slate-100 dark:border-slate-800">
+            <div class="w-9 h-9 rounded-full bg-sky-100 dark:bg-sky-950 flex items-center justify-center font-bold text-sky-600 text-xs">AS</div>
+            <div>
+              <h4 class="text-xs font-bold text-slate-800 dark:text-white">Amina Shaji</h4>
+              <span class="text-[10px] text-emerald-500 font-bold block">✓ Verified Buyer, Balakrishnapuram</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="glass-panel p-8 space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-yellow-400">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-xs text-slate-650 dark:text-slate-300 leading-relaxed font-medium italic">
+              "We installed a 50 LPH commercial system at our office. It has been running flawlessly for over a year now. The team did a neat piping job. Mohammed Hanif was very helpful in selecting the right capacity."
+            </p>
+          </div>
+          <div class="flex items-center space-x-3 pt-3 border-t border-slate-100 dark:border-slate-800">
+            <div class="w-9 h-9 rounded-full bg-sky-100 dark:bg-sky-950 flex items-center justify-center font-bold text-sky-600 text-xs">M</div>
+            <div>
+              <h4 class="text-xs font-bold text-slate-800 dark:text-white">M. Murugan</h4>
+              <span class="text-[10px] text-emerald-500 font-bold block">✓ Verified Buyer, Begambur</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (NEW) -->
+  <section id="faq" class="py-20 bg-white dark:bg-slate-950 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      
+      <div class="mb-12 text-center space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-sky">Frequently Asked Questions</span>
+        <h2 class="text-3xl font-extrabold text-brand-navy dark:text-white ripple-header">Water Purifier FAQ</h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 dark:text-white">How often should I change my RO water purifier filters?</h3>
+            <svg class="faq-icon w-4 h-4 text-brand-sky" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+              We recommend replacing the pre-filter sediment and pre-carbon cartridges every 6 to 8 months depending on raw input water quality. The main RO membrane typically lasts between 1.5 to 2 years under regular domestic usage.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 dark:text-white">What is a TDS controller and why is it important?</h3>
+            <svg class="faq-icon w-4 h-4 text-brand-sky" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+              A TDS (Total Dissolved Solids) controller allows adjustment of dissolved minerals in purified water. Raw ground-water in Dindigul can have high TDS. A TDS controller ensures minerals like Calcium and Magnesium are retained in a safe, healthy proportion rather than being completely stripped.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 dark:text-white">Do you provide free delivery and installation in Dindigul?</h3>
+            <svg class="faq-icon w-4 h-4 text-brand-sky" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+              Yes, we provide completely free delivery and expert mounting installation across all areas in Dindigul. A service technician will set up the unit, run leak checks, and calibrate the TDS levels in your presence.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 dark:text-white">What is covered under the Annual Maintenance Contract (AMC)?</h3>
+            <svg class="faq-icon w-4 h-4 text-brand-sky" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+              Our AMC plans cover two filter cartridge replacements, three scheduled servicing visits, electrical spares coverage (SMPS power adaptor/pump motor repair), and priority breakdown repairs with zero visiting charges.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Direct Order Section (NEW) -->
+  <section id="direct-order" class="py-20 bg-slate-100 dark:bg-slate-900/30 relative">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      
+      <div class="mb-12 text-center space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-sky">Instant Order</span>
+        <h2 class="text-3xl font-extrabold text-brand-navy dark:text-white ripple-header">Place An Order Online</h2>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">Submit your delivery details below to checkout and confirm your booking.</p>
+      </div>
+
+      <div class="glass-panel p-8 border border-slate-100 dark:border-slate-800 shadow-md">
+        <form id="inline-order-form" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="order-name" class="block text-xs font-bold uppercase text-slate-450 dark:text-slate-400 mb-2">Your Full Name</label>
+              <input type="text" id="order-name" required class="w-full px-4 py-3 rounded-xl custom-input text-sm" placeholder="e.g. Saravanan K">
+            </div>
+            <div>
+              <label for="order-phone" class="block text-xs font-bold uppercase text-slate-450 dark:text-slate-400 mb-2">Phone Number</label>
+              <input type="tel" id="order-phone" required class="w-full px-4 py-3 rounded-xl custom-input text-sm" placeholder="e.g. 9876543210">
+            </div>
+          </div>
+
+          <div>
+            <label for="order-address" class="block text-xs font-bold uppercase text-slate-450 dark:text-slate-400 mb-2">Delivery & Installation Address (Dindigul area)</label>
+            <textarea id="order-address" rows="3" required class="w-full px-4 py-3 rounded-xl custom-input text-sm" placeholder="e.g. No. 42, West Car Street, Spencer Compound, Dindigul - 624001"></textarea>
+          </div>
+
+          <div>
+            <label for="order-product-select" class="block text-xs font-bold uppercase text-slate-450 dark:text-slate-400 mb-2">Select Purifier Model</label>
+            <select id="order-product-select" required class="w-full px-4 py-3 rounded-xl custom-input text-sm">
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+
+          <button type="submit" class="btn-ripple btn-primary w-full py-4 rounded-xl text-xs font-black uppercase tracking-wider">
+            Proceed to Payment & Checkout
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact & Service Section -->
+  <section id="contact" class="py-20 bg-white dark:bg-slate-950 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative grid grid-cols-1 lg:grid-cols-12 gap-16">
+      
+      <!-- Contact Info (Left) -->
+      <div class="lg:col-span-5 space-y-8">
+        <div class="space-y-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-sky">Get in Touch</span>
+          <h2 class="text-3xl font-extrabold text-brand-navy dark:text-white leading-tight">Request Free Demo or Service</h2>
+          <p class="text-sm text-slate-650 dark:text-slate-400 font-medium leading-relaxed">
+            Need installation, cartridge change, or machine repair? Fill out the form or reach out to us directly via phone or WhatsApp. We serve all locations in Dindigul.
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          
+          <!-- Phone Number -->
+          <div class="flex items-start space-x-4">
+            <div class="w-10 h-10 bg-gradient-to-tr from-brand-blue to-brand-sky rounded-xl flex items-center justify-center text-white flex-shrink-0">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-slate-400 block mb-0.5">Call Us Directly</span>
+              <a href="tel:9791454214" class="text-sm font-extrabold text-slate-800 dark:text-white hover:text-brand-sky transition-colors block">9791454214</a>
+              <a href="tel:7539975929" class="text-sm font-extrabold text-slate-800 dark:text-white hover:text-brand-sky transition-colors block">7539975929</a>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="flex items-start space-x-4">
+            <div class="w-10 h-10 bg-gradient-to-tr from-brand-blue to-brand-sky rounded-xl flex items-center justify-center text-white flex-shrink-0">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-slate-400 block mb-0.5">Service Center</span>
+              <p class="text-sm font-semibold text-slate-800 dark:text-white">Dindigul, Tamil Nadu, India</p>
+            </div>
+          </div>
+
+          <!-- WhatsApp Chat -->
+          <div class="flex items-start space-x-4">
+            <div class="w-10 h-10 bg-emerald-500 rounded-xl flex items-center justify-center text-white flex-shrink-0 shadow-md shadow-emerald-500/20">
+              <svg width="22" height="22" class="text-white fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.324 5.328 0 11.859 0c3.161.001 6.132 1.233 8.368 3.472 2.235 2.24 3.461 5.213 3.461 8.381 0 6.54-5.325 11.86-11.859 11.86-2.007-.001-3.98-.519-5.73-1.506L0 24zm6.59-4.846c1.666.988 3.311 1.503 4.987 1.505 5.517 0 10.005-4.493 10.008-10.016.002-2.675-1.033-5.188-2.917-7.078C16.843 1.675 14.335.633 11.666.633 6.148.633 1.66 5.126 1.657 10.648c-.001 1.79.483 3.486 1.402 5.07l-.922 3.364 3.51-.928zM17.5 13.9c-.28-.14-1.65-.81-1.91-.9-.26-.1-.45-.14-.64.14-.19.28-.73.9-.9 1.1-.17.2-.34.22-.62.08-.28-.14-1.18-.43-2.25-1.38-.83-.74-1.39-1.65-1.55-1.93-.17-.28-.02-.43.12-.57.13-.13.28-.33.42-.49.14-.16.19-.28.28-.46.09-.18.05-.33-.02-.47-.07-.14-.63-1.53-.87-2.09-.23-.55-.47-.48-.64-.49-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.76.35-.26.28-.99.97-.99 2.37 0 1.4 1.02 2.76 1.16 2.95.14.19 2 3.06 4.85 4.29.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.11.55-.08 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.32-.07-.12-.26-.19-.54-.33z"/></svg>
+            </div>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-slate-400 block mb-0.5">WhatsApp Inquiry</span>
+              <a href="https://wa.me/919791454214?text=Hello%20Raja%20Aqua,%20I%20am%20interested%2520in%20your%20RO%20Systems!" target="_blank" class="text-sm font-bold text-emerald-600 hover:text-emerald-805 transition-colors block">Chat on WhatsApp Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Contact Form & Map (Right) -->
+      <div class="lg:col-span-7 space-y-12">
+        
+        <!-- Contact Form Box -->
+        <div class="glass-panel p-8 border border-slate-100 dark:border-slate-800 shadow-md">
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-6">Service Request Form</h3>
+          <form id="contact-form" class="space-y-6">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="contact-name" class="block text-[10px] font-bold uppercase text-slate-450 dark:text-slate-400 mb-2">Your Name</label>
+                <input type="text" id="contact-name" required class="w-full px-4 py-3 rounded-xl custom-input text-sm" placeholder="e.g. Anand Kumar">
+              </div>
+              <div>
+                <label for="contact-phone" class="block text-[10px] font-bold uppercase text-slate-450 dark:text-slate-400 mb-2">Phone Number</label>
+                <input type="tel" id="contact-phone" required class="w-full px-4 py-3 rounded-xl custom-input text-sm" placeholder="e.g. 9876543210">
+              </div>
+            </div>
+
+            <div>
+              <label for="contact-email" class="block text-[10px] font-bold uppercase text-slate-450 dark:text-slate-400 mb-2">Email Address (Optional)</label>
+              <input type="email" id="contact-email" class="w-full px-4 py-3 rounded-xl custom-input text-sm" placeholder="anand@example.com">
+            </div>
+
+            <div>
+              <label for="contact-msg" class="block text-[10px] font-bold uppercase text-slate-450 dark:text-slate-400 mb-2">How can we help you?</label>
+              <textarea id="contact-msg" rows="4" required class="w-full px-4 py-3 rounded-xl custom-input text-sm" placeholder="Please specify your request (e.g. New RO installation, filter servicing, repair request)"></textarea>
+            </div>
+
+            <button type="submit" class="btn-ripple btn-primary w-full py-4 rounded-xl text-xs font-bold uppercase tracking-wider">
+              Send Request
+            </button>
+          </form>
+        </div>
+
+        <!-- Google Map Embedded (Dindigul location) -->
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62744.116631899534!2d77.93514214736631!3d10.361405118742512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00ab01e9185a53%3A0xc3c5c99c82ed8c56!2sDindigul%2C%2520Tamil%2520Nadu!5e0!3m2!1sen!2sin!4v1717904000000!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Shopping Cart Drawer -->
+  <div id="cart-overlay" onclick="hideCartDrawer()" class="cart-overlay"></div>
+  <div id="cart-drawer" class="cart-drawer">
+    
+    <!-- Drawer Header -->
+    <div class="p-6 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="text-brand-sky" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+        </svg>
+        <h3 class="text-base font-bold text-slate-900 dark:text-white">Shopping Cart</h3>
+      </div>
+      <button onclick="hideCartDrawer()" class="p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-slate-600 transition-colors">
+        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Cart Item list -->
+    <div id="cart-items" class="flex-grow overflow-y-auto p-6">
+      <!-- Loaded dynamically by app.js -->
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="p-6 border-t border-slate-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/40 backdrop-blur-md">
+      <div class="flex items-center justify-between mb-6">
+        <span class="text-xs font-bold text-slate-500">Subtotal</span>
+        <span id="cart-subtotal" class="text-xl font-black text-slate-900 dark:text-white">₹0</span>
+      </div>
+      <button onclick="openCheckout()" class="btn-ripple btn-primary w-full py-4 rounded-xl text-xs font-black uppercase tracking-wider">
+        Proceed to Checkout
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Multi-step Checkout & Payment Modal -->
+  <div id="checkout-modal" class="modal-overlay">
+    <div class="modal-content glass-panel p-8 w-full max-w-[620px] relative border border-brand-sky/20">
+      
+      <!-- Close button -->
+      <button onclick="closeCheckout()" class="absolute top-6 right-6 p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-slate-600 transition-colors">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <!-- SCREEN 1: Checkout Form -->
+      <div id="checkout-form-screen" class="space-y-6">
+        <div class="space-y-2">
+          <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Complete Your Order</h3>
+          <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest">Free delivery and installation in Dindigul</p>
+        </div>
+
+        <form id="checkout-form" class="space-y-6">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="checkout-name" class="block text-[10px] font-bold uppercase text-slate-450 dark:text-slate-400 mb-2">Full Name</label>
+              <input type="text" id="checkout-name" required class="w-full px-4 py-3 rounded-xl custom-input text-sm" placeholder="e.g. Rajesh Kumar">
+            </div>
+            <div>
+              <label for="checkout-phone" class="block text-[10px] font-bold uppercase text-slate-450 dark:text-slate-400 mb-2">Contact Phone</label>
+              <input type="tel" id="checkout-phone" required class="w-full px-4 py-3 rounded-xl custom-input text-sm" placeholder="e.g. 9876543210">
+            </div>
+          </div>
+
+          <div>
+            <label for="checkout-address" class="block text-[10px] font-bold uppercase text-slate-450 dark:text-slate-400 mb-2">Delivery Address (Dindigul Area Only)</label>
+            <textarea id="checkout-address" rows="3" required class="w-full px-4 py-3 rounded-xl custom-input text-sm" placeholder="e.g. No. 12, Spencer Compound, Dindigul - 624001"></textarea>
+          </div>
+
+          <div>
+            <label for="checkout-product-select" class="block text-[10px] font-bold uppercase text-slate-450 dark:text-slate-400 mb-2">Selected Water System</label>
+            <select id="checkout-product-select" required class="w-full px-4 py-3 rounded-xl custom-input text-sm">
+              <!-- Populated Dynamically -->
+            </select>
+          </div>
+
+          <!-- Dummy Payment Options Layout -->
+          <div class="space-y-4">
+            <span class="block text-[10px] font-bold uppercase text-slate-450 dark:text-slate-400">Choose Payment Method</span>
+            
+            <div class="grid grid-cols-2 gap-4">
+              <!-- UPI payment toggle -->
+              <button type="button" id="pay-method-upi" onclick="setPaymentMethod('upi')" class="p-4 rounded-xl border border-sky-500 bg-sky-50/50 dark:bg-sky-950/20 text-center flex flex-col items-center justify-center space-y-1.5 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                <span class="text-xs font-bold text-slate-800 dark:text-white">Scan & Pay using UPI</span>
+              </button>
+
+              <!-- COD payment toggle -->
+              <button type="button" id="pay-method-cod" onclick="setPaymentMethod('cod')" class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center flex flex-col items-center justify-center space-y-1.5 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                <span class="text-xs font-bold text-slate-850 dark:text-slate-350">Cash on Delivery (COD)</span>
+              </button>
+            </div>
+
+            <!-- UPI Payment Screen -->
+            <div id="upi-payment-form" class="p-5 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-slate-100 dark:border-slate-850 flex flex-col items-center space-y-4">
+              <div class="text-center">
+                <span class="text-[10px] uppercase font-bold text-slate-400 block mb-1">Scan to pay with any UPI app</span>
+                <span class="text-xs font-extrabold text-brand-sky">UPI ID: mohamedhaneefh9@okhdfcbank</span>
+              </div>
+              
+              <!-- Embedded GPay QR Code -->
+              <div class="w-40 h-40 bg-white p-1 rounded-xl border border-slate-200 flex items-center justify-center overflow-hidden">
+                <img src="qr_code.jpg" alt="Scan & Pay using UPI" class="w-full h-full object-contain" loading="lazy">
+              </div>
+              <p class="text-[10px] text-slate-400 text-center font-medium">After scanning and completing the transaction on your mobile, click "Confirm Order" below. We will verify the transaction upon dispatch.</p>
+            </div>
+
+            <!-- COD Payment Screen (Hidden by default) -->
+            <div id="cod-payment-form" class="hidden p-5 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-slate-100 dark:border-slate-850 flex flex-col items-center space-y-2 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-emerald-500 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <h4 class="text-xs font-bold text-slate-800 dark:text-white">Cash on Delivery (COD)</h4>
+              <p class="text-[10px] text-slate-400 font-medium">Pay in cash or via local UPI directly to our technician after successful installation of the RO purifier.</p>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn-ripple btn-primary w-full py-4 rounded-xl text-xs font-black uppercase tracking-wider">
+            Confirm Order
+          </button>
+        </form>
+      </div>
+
+      <!-- SCREEN 2: Payment Success Screen (Hidden by default) -->
+      <div id="payment-success-screen" class="hidden text-center py-8 space-y-6">
+        
+        <!-- Success Icon -->
+        <div class="w-16 h-16 bg-emerald-500/10 text-emerald-500 rounded-full flex items-center justify-center mx-auto shadow-inner">
+          <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="text-2xl font-black text-emerald-600 dark:text-emerald-400">Order Confirmed Successfully!</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">Thank you for ordering with Raja Aqua. Your order details are below.</p>
+        </div>
+
+        <!-- Order Summary Box -->
+        <div class="max-w-md mx-auto p-6 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-slate-100 dark:border-slate-850 text-left space-y-3.5 text-xs font-semibold">
+          <div class="flex justify-between border-b border-slate-200/50 pb-2 text-slate-400">
+            <span>Order ID</span>
+            <span id="success-order-id" class="font-extrabold text-slate-800 dark:text-white">RO-DDG-123456</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-400">System Ordered</span>
+            <span id="success-product-name" class="text-slate-800 dark:text-slate-250">Raja Aqua Premium Alkaline RO</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-400">Total Price</span>
+            <span id="success-amount" class="text-sky-600 dark:text-sky-400 font-extrabold">₹8,499</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-400">Delivery Status</span>
+            <span class="text-emerald-500 font-bold">Same-Day Dispatch</span>
+          </div>
+          <div class="flex flex-col space-y-1 pt-2 border-t border-slate-200/50 text-slate-400">
+            <span>Delivery & Installation Address:</span>
+            <p id="success-address" class="text-slate-800 dark:text-slate-250 font-normal leading-relaxed">Address details</p>
+          </div>
+        </div>
+
+        <!-- WhatsApp Owner Notification Buttons -->
+        <div class="max-w-md mx-auto p-4 bg-emerald-50/50 dark:bg-emerald-950/10 rounded-2xl border border-emerald-100/40 dark:border-emerald-900/20 text-center space-y-3">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-450 block">Notify Owner Instantly</span>
+          <div class="flex flex-col sm:flex-row gap-2.5 justify-center">
+            <a id="whatsapp-notify-btn-1" href="#" target="_blank" class="px-4 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold text-[11px] rounded-xl flex items-center justify-center gap-1.5 transition-all">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 8 .258c-4.303 0-7.802 3.49-7.804 7.788a7.725 7.725 0 0 0 1.052 3.82L0 16l4.4-1.155a7.8 7.8 0 0 0 3.597.876h.003c4.302 0 7.8-3.49 7.802-7.787a7.7 7.7 0 0 0-2.204-5.607m-5.6 12.02a6.52 6.52 0 0 1-3.298-.9l-.236-.141-2.45.642.654-2.39-.155-.247a6.49 6.49 0 0 1-1.002-3.48c0-3.58 2.922-6.502 6.507-6.502 1.733 0 3.36.675 4.588 1.904a6.5 6.5 0 0 1 1.902 4.59c-.002 3.582-2.923 6.505-6.507 6.505m3.592-4.814c-.18-.09-.18-.09-.27-.09-.09 0-.16.03-.23.09l-.31.38c-.09.11-.18.11-.27.06-.09-.04-.37-.14-.7-.44-.25-.22-.42-.5-.47-.59-.05-.09-.01-.14.03-.18l.24-.28c.04-.05.06-.11.03-.17l-.23-.55c-.09-.22-.18-.21-.27-.21-.08 0-.16-.01-.23-.01-.07 0-.18.03-.28.14-.1.11-.38.37-.38.9 0 .53.39 1.04.44 1.11.05.07.76 1.17 1.85 1.64.26.11.46.18.62.23.27.08.51.07.7.04.21-.03.65-.27.74-.53.09-.27.09-.5 0-.58-.02-.08-.09-.12-.23-.19"/>
+              </svg>
+              <span>Owner 1 (9791454214)</span>
+            </a>
+            <a id="whatsapp-notify-btn-2" href="#" target="_blank" class="px-4 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold text-[11px] rounded-xl flex items-center justify-center gap-1.5 transition-all">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 8 .258c-4.303 0-7.802 3.49-7.804 7.788a7.725 7.725 0 0 0 1.052 3.82L0 16l4.4-1.155a7.8 7.8 0 0 0 3.597.876h.003c4.302 0 7.8-3.49 7.802-7.787a7.7 7.7 0 0 0-2.204-5.607m-5.6 12.02a6.52 6.52 0 0 1-3.298-.9l-.236-.141-2.45.642.654-2.39-.155-.247a6.49 6.49 0 0 1-1.002-3.48c0-3.58 2.922-6.502 6.507-6.502 1.733 0 3.36.675 4.588 1.904a6.5 6.5 0 0 1 1.902 4.59c-.002 3.582-2.923 6.505-6.507 6.505m3.592-4.814c-.18-.09-.18-.09-.27-.09-.09 0-.16.03-.23.09l-.31.38c-.09.11-.18.11-.27.06-.09-.04-.37-.14-.7-.44-.25-.22-.42-.5-.47-.59-.05-.09-.01-.14.03-.18l.24-.28c.04-.05.06-.11.03-.17l-.23-.55c-.09-.22-.18-.21-.27-.21-.08 0-.16-.01-.23-.01-.07 0-.18.03-.28.14-.1.11-.38.37-.38.9 0 .53.39 1.04.44 1.11.05.07.76 1.17 1.85 1.64.26.11.46.18.62.23.27.08.51.07.7.04.21-.03.65-.27.74-.53.09-.27.09-.5 0-.58-.02-.08-.09-.12-.23-.19"/>
+              </svg>
+              <span>Owner 2 (6385548048)</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-center space-x-4">
+          <button onclick="closeCheckout()" class="btn-ripple btn-secondary px-6 py-3 rounded-xl text-xs font-bold dark:text-brand-ice dark:border-brand-sky">
+            Continue Shopping
+          </button>
+          <button onclick="window.print()" class="btn-ripple btn-primary px-6 py-3 rounded-xl text-xs font-bold">
+            Print Invoice
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Admin Panel Dashboard Modal -->
+  <div id="admin-modal" class="modal-overlay">
+    <div class="modal-content glass-panel p-8 w-full max-w-[900px] relative border border-brand-sky/20">
+      
+      <!-- Close button -->
+      <button onclick="closeAdmin()" class="absolute top-6 right-6 p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-slate-600 transition-colors">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div class="space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800/80 pb-3">
+          <div class="space-y-1">
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Admin Dashboard</h3>
+            <p class="text-xs text-brand-sky font-bold uppercase tracking-wider">Control products and manage customer orders</p>
+          </div>
+          <div>
+            <button type="button" onclick="resetCatalogToDefault()" class="text-[10px] font-bold text-red-500 hover:text-red-750 border border-red-500/20 px-3 py-2 rounded-xl bg-red-50/5 hover:bg-red-50/10 transition-all uppercase tracking-wider">
+              Reset Catalog
+            </button>
+          </div>
+        </div>
+
+        <!-- Dashboard Tabs Header -->
+        <div class="flex border-b border-slate-200 dark:border-slate-800/60 gap-6">
+          <button id="admin-tab-catalog-btn" onclick="switchAdminTab('catalog')" class="pb-2.5 text-xs font-bold uppercase tracking-wider border-b-2 border-brand-sky text-brand-sky transition-all duration-200">
+            Catalog Management
+          </button>
+          <button id="admin-tab-orders-btn" onclick="switchAdminTab('orders')" class="pb-2.5 text-xs font-bold uppercase tracking-wider border-b-2 border-transparent text-slate-400 hover:text-slate-800 dark:hover:text-white transition-all duration-200">
+            Customer Orders (<span id="admin-orders-count">0</span>)
+          </button>
+        </div>
+
+        <!-- Tab Content 1: Catalog Management -->
+        <div id="admin-catalog-tab" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Product Table List (Admin Left) -->
+          <div class="lg:col-span-7 space-y-4">
+            <h4 class="text-sm font-bold uppercase tracking-widest text-slate-450">Current Products</h4>
+            
+            <div class="overflow-x-auto rounded-xl border border-slate-100 dark:border-slate-800 shadow-inner max-h-[440px] overflow-y-auto">
+              <table class="w-full text-left border-collapse">
+                <thead>
+                  <tr class="bg-slate-100 dark:bg-slate-900 text-xs font-extrabold uppercase text-slate-500 border-b border-slate-200 dark:border-slate-800">
+                    <th class="px-4 py-3">Product Name</th>
+                    <th class="px-4 py-3">Price</th>
+                    <th class="px-4 py-3">Cap.</th>
+                    <th class="px-4 py-3 text-right">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="admin-products-list">
+                  <!-- Loaded dynamically by app.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Product Add/Edit Forms (Admin Right) -->
+          <div class="lg:col-span-5 glass-panel p-6 bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800 shadow-md">
+            
+            <!-- ADD PRODUCT FORM -->
+            <div id="add-product-section" class="space-y-4">
+              <h4 class="text-sm font-bold uppercase tracking-widest text-slate-400">Add New System</h4>
+              <form id="add-product-form" class="space-y-4">
+                
+                <div>
+                  <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">System Name</label>
+                  <input type="text" id="prod-name" required class="w-full px-3 py-2 rounded-lg custom-input text-xs" placeholder="e.g. Raja Aqua Eco-Max RO">
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">Price (INR)</label>
+                    <input type="number" id="prod-price" required class="w-full px-3 py-2 rounded-lg custom-input text-xs" placeholder="e.g. 7999">
+                  </div>
+                  <div>
+                    <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">Capacity</label>
+                    <input type="text" id="prod-capacity" required class="w-full px-3 py-2 rounded-lg custom-input text-xs" placeholder="e.g. 10L">
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">Technology Details</label>
+                  <input type="text" id="prod-tech" required class="w-full px-3 py-2 rounded-lg custom-input text-xs" placeholder="e.g. RO + UV + UF + TDS Controller">
+                </div>
+
+                <!-- Custom Image Upload Section -->
+                <div>
+                  <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">Upload Product Image</label>
+                  <input type="file" id="prod-upload-file" accept="image/*" class="w-full text-[10px] text-slate-500 file:mr-2 file:py-1 file:px-2 file:rounded-lg file:border-0 file:text-[10px] file:font-bold file:bg-sky-50 file:text-sky-700 hover:file:bg-sky-100 dark:file:bg-sky-950/20 dark:file:text-sky-400 mb-2">
+                  
+                  <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">Or Choose Stock Photo</label>
+                  <select id="prod-image" class="w-full px-3 py-2 rounded-lg custom-input text-xs">
+                    <!-- Populated dynamically with stock images -->
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">Key Features (One per line)</label>
+                  <textarea id="prod-features" rows="2" class="w-full px-3 py-2 rounded-lg custom-input text-xs" placeholder="e.g. Smart LED indicator&#10;Alkaline pH booster&#10;Water Saving Tech"></textarea>
+                </div>
+
+                <button type="submit" class="btn-ripple btn-primary w-full py-3 rounded-lg text-xs font-bold uppercase tracking-wider">
+                  Add System
+                </button>
+
+              </form>
+            </div>
+
+            <!-- EDIT PRODUCT FORM (Hidden by default) -->
+            <div id="edit-product-section" class="space-y-4 hidden">
+              <h4 class="text-sm font-bold uppercase tracking-widest text-slate-400 text-sky-500">Edit System Details</h4>
+              <form id="edit-product-form" class="space-y-4">
+                
+                <div>
+                  <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">System Name</label>
+                  <input type="text" id="edit-prod-name" required class="w-full px-3 py-2 rounded-lg custom-input text-xs">
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">Price (INR)</label>
+                    <input type="number" id="edit-prod-price" required class="w-full px-3 py-2 rounded-lg custom-input text-xs">
+                  </div>
+                  <div>
+                    <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">Capacity</label>
+                    <input type="text" id="edit-prod-capacity" required class="w-full px-3 py-2 rounded-lg custom-input text-xs">
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">Technology Details</label>
+                  <input type="text" id="edit-prod-tech" required class="w-full px-3 py-2 rounded-lg custom-input text-xs">
+                </div>
+
+                <!-- Custom Image Upload Section -->
+                <div>
+                  <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">Upload Product Image</label>
+                  <input type="file" id="edit-prod-upload-file" accept="image/*" class="w-full text-[10px] text-slate-500 file:mr-2 file:py-1 file:px-2 file:rounded-lg file:border-0 file:text-[10px] file:font-bold file:bg-sky-50 file:text-sky-700 hover:file:bg-sky-100 dark:file:bg-sky-950/20 dark:file:text-sky-400 mb-2">
+
+                  <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">Or Choose Stock Photo</label>
+                  <select id="edit-prod-image" class="w-full px-3 py-2 rounded-lg custom-input text-xs">
+                    <!-- Populated dynamically with stock images -->
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-[9px] font-bold uppercase text-slate-400 mb-1">Key Features (One per line)</label>
+                  <textarea id="edit-prod-features" rows="2" class="w-full px-3 py-2 rounded-lg custom-input text-xs"></textarea>
+                </div>
+
+                <div class="flex space-x-2">
+                  <button type="button" onclick="cancelEditProduct()" class="w-1/3 py-3 rounded-lg text-xs font-bold uppercase bg-slate-200 hover:bg-slate-300 text-slate-700 transition-colors">
+                    Cancel
+                  </button>
+                  <button type="submit" class="w-2/3 btn-ripple btn-primary py-3 rounded-lg text-xs font-bold uppercase tracking-wider">
+                    Save Changes
+                  </button>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Tab Content 2: Customer Orders (Hidden by default) -->
+        <div id="admin-orders-tab" class="hidden space-y-6">
+          <div class="flex items-center justify-between">
+            <h4 class="text-sm font-bold uppercase tracking-widest text-slate-450">Customer Order Logs</h4>
+            <span class="text-[10px] text-slate-400 font-semibold bg-slate-100 dark:bg-slate-850 px-2.5 py-1 rounded-lg">Database Sync Enabled</span>
+          </div>
+
+          <div class="overflow-x-auto rounded-xl border border-slate-100 dark:border-slate-800 shadow-inner max-h-[440px] overflow-y-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-slate-100 dark:bg-slate-900 text-xs font-extrabold uppercase text-slate-500 border-b border-slate-200 dark:border-slate-800">
+                  <th class="px-4 py-3">Order ID</th>
+                  <th class="px-4 py-3">Date</th>
+                  <th class="px-4 py-3">Customer Details</th>
+                  <th class="px-4 py-3">Product Model</th>
+                  <th class="px-4 py-3">Amount</th>
+                  <th class="px-4 py-3">Method</th>
+                  <th class="px-4 py-3 text-right">Status</th>
+                </tr>
+              </thead>
+              <tbody id="admin-orders-list" class="divide-y divide-slate-100 dark:divide-slate-800">
+                <!-- Loaded dynamically by app.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+      
+      <!-- Brand column (Footer Left) -->
+      <div class="md:col-span-5 space-y-4">
+        <a href="#home" class="flex items-center space-x-2.5">
+          <div class="w-9 h-9 bg-gradient-to-tr from-brand-blue to-brand-sky rounded-xl flex items-center justify-center text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <span class="text-lg font-black text-white tracking-tight">Raja Aqua</span>
+        </a>
+        <p class="text-xs font-medium text-slate-500 leading-relaxed max-w-sm">
+          Dindigul's trusted destination for high-quality, advanced domestic and commercial RO Systems. Providing pure water, service repairs, and maintenance since 2016.
+        </p>
+      </div>
+
+      <!-- Quick links (Footer Center) -->
+      <div class="md:col-span-3 space-y-4">
+        <h4 class="text-sm font-bold uppercase tracking-wider text-white">Quick Links</h4>
+        <ul class="space-y-2 text-xs font-medium">
+          <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+          <li><a href="#products" class="hover:text-white transition-colors">Products</a></li>
+          <li><a href="#testimonials" class="hover:text-white transition-colors">Reviews</a></li>
+          <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Contact Info (Footer Right) -->
+      <div class="md:col-span-4 space-y-4">
+        <h4 class="text-sm font-bold uppercase tracking-wider text-white">Service Support</h4>
+        <ul class="space-y-3 text-xs font-medium">
+          <li class="flex items-center text-slate-400">
+            <svg width="16" height="16" class="mr-2.5 text-brand-sky" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>9791454214 / 7539975929</span>
+          </li>
+          <li class="flex items-start text-slate-400">
+            <svg width="16" height="16" class="mr-2.5 mt-0.5 text-brand-sky" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Dindigul, Tamil Nadu, India</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-semibold text-slate-655">
+      <span>© 2026 Raja Aqua (RO Systems). All rights reserved.</span>
+      <div class="flex items-center space-x-6">
+        <a href="#about" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+        <a href="#about" class="hover:text-slate-400 transition-colors">Terms of Service</a>
+        <button onclick="openAdmin()" class="hover:text-slate-400 transition-colors flex items-center space-x-1">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          <span>Admin</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP Animation Engine Libraries & Three.js via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- Main app script -->
+  <script src="app.js"></script>
+</body>
+</html>
